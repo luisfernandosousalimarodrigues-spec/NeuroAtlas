@@ -37,3 +37,7 @@ Site educativo em português brasileiro sobre a doença de Creutzfeldt-Jakob e o
 
 ## Atualização terapêutica
 A página ganhou uma seção sobre futuras terapias, distinguindo cuidado atual de hipóteses experimentais. A síntese usa uma revisão científica recente e o registro do ClinicalTrials.gov NCT06153966 para apresentar redução de PrPᶜ, bloqueio de conversão, remoção de agregados/neuroproteção e importância do diagnóstico precoce. O texto evita chamar qualquer linha de pesquisa de cura comprovada.
+
+
+## Atualização de escopo neurológico
+O site agora possui um Atlas do sistema nervoso separado do explorador de doenças priônicas. A primeira camada cobre epilepsia, AVC, esclerose múltipla, Parkinson, neuropatia diabética, ELA, enxaqueca, meningite/encefalite e a trilha de CJD. Cada item tem área, resumo, ficha e aviso de que as categorias são didáticas.

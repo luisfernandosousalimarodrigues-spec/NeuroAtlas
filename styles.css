@@ -144,3 +144,17 @@ h2 em { font-weight: 500; color: var(--orange-dark); }
 .research-caution { display: grid; grid-template-columns: 210px 1fr; gap: 24px; margin-top: 22px; padding-top: 17px; border-top: 1px solid #cbd2d4; }.research-caution strong { color: var(--ink); font-size: 11px; }.research-caution span { color: #687271; font-size: 12px; line-height: 1.5; }
 @media (max-width: 950px) { .research-grid { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 700px) { .research-status { align-items: flex-start; flex-wrap: wrap; }.research-status a { margin-left: 30px; }.research-grid { grid-template-columns: 1fr; }.research-card { min-height: auto; }.research-caution { grid-template-columns: 1fr; gap: 8px; } }
+
+/* Atlas amplo do sistema nervoso */
+.neuro-section { background: var(--paper); border-top: 1px solid #e3e0d8; }
+.neuro-toolbar { display: flex; justify-content: space-between; gap: 20px; align-items: center; flex-wrap: wrap; margin-bottom: 26px; }
+.neuro-filter { background: transparent; border: 1px solid #c4c5bf; color: #717672; border-radius: 30px; padding: 8px 12px; font-size: 10px; font-weight: 700; }
+.neuro-filter:hover, .neuro-filter.active { border-color: var(--ink); color: var(--cream); background: var(--ink); }
+.neuro-grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 15px; }
+.neuro-card { grid-column: span 4; min-height: 280px; display: flex; flex-direction: column; padding: 22px; background: var(--cream); border: 1px solid #e1ddd5; transition: transform .2s ease, box-shadow .2s ease; }
+.neuro-card:hover { transform: translateY(-3px); box-shadow: var(--shadow); }
+.neuro-card:nth-child(3n + 1) { border-top: 3px solid var(--orange); }.neuro-card:nth-child(3n + 2) { border-top: 3px solid var(--blue); }.neuro-card:nth-child(3n) { border-top: 3px solid var(--lime); }
+.neuro-card-top { display: flex; justify-content: space-between; align-items: center; gap: 10px; }.neuro-area { color: var(--orange-dark); text-transform: uppercase; letter-spacing: .1em; font-size: 9px; font-weight: 700; }.neuro-card .disease-code { color: #9a9e99; }
+.neuro-card h3 { font-family: var(--serif); font-size: 31px; line-height: .96; margin: 28px 0 12px; }.neuro-card p { color: #6f7774; font-size: 12px; line-height: 1.55; }.neuro-card-footer { display: flex; justify-content: space-between; align-items: end; gap: 10px; margin-top: auto; padding-top: 13px; border-top: 1px solid #d8d4cb; }.neuro-card-footer span { color: #8a8f8b; font-size: 9px; text-transform: uppercase; letter-spacing: .08em; }.neuro-card-footer button { border: 0; background: transparent; padding: 0; color: var(--orange-dark); font-size: 10px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }.atlas-note { display: grid; grid-template-columns: 180px 1fr; gap: 25px; margin-top: 25px; padding-top: 16px; border-top: 1px solid var(--line); }.atlas-note strong { font-size: 11px; }.atlas-note span { max-width: 650px; color: #737a76; font-size: 12px; }
+@media (max-width: 950px) { .neuro-card { grid-column: span 6; } }
+@media (max-width: 700px) { .neuro-toolbar { align-items: stretch; }.neuro-toolbar .search-box { width: 100%; }.neuro-card { grid-column: span 1; min-height: 240px; }.atlas-note { grid-template-columns: 1fr; gap: 8px; } }

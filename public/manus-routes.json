@@ -1,5 +1,5 @@
 {
   "routes": [
-    { "path": "/", "title": "PrionLab — estudo de doenças priônicas" }
+    { "path": "/", "title": "PrionLab — atlas do sistema nervoso" }
   ]
 }

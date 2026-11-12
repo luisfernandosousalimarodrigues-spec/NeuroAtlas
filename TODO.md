@@ -22,3 +22,10 @@
 - [x] O site explica que não há cura aprovada atualmente e apresenta, como hipóteses de pesquisa, redução de PrPᶜ, bloqueio da conversão, remoção de agregados, neuroproteção e intervenção precoce.
 - [x] O site diferencia evidência pré-clínica de ensaio em humanos e inclui o registro do estudo PrProfile/ION717 sem prometer eficácia.
 - [x] Quiz, flashcards e glossário foram atualizados com os conceitos de oligonucleotídeo antissenso, PrP-lowering e ensaio clínico.
+
+
+## Atlas do sistema nervoso
+- [x] O site mantém CJD como trilha especializada e adiciona um Atlas amplo, sem limitar o conteúdo a neuropatias ou neurodegeneração.
+- [x] O Atlas cobre cérebro, crises epilépticas, sistema imune/desmielinização, nervos periféricos, circulação, movimento, neuroinfecção e neurônio motor.
+- [x] O Atlas tem busca, filtros por área e fichas educativas com escopo e limites clínicos.
+- [x] O conteúdo aponta para o catálogo de doenças do NINDS e para panorama da OMS.
