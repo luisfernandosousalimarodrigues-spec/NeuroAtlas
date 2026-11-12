@@ -18,10 +18,11 @@
         <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
         <span><strong>Prion</strong><em>Lab</em></span>
       </a>
-      <nav class="main-nav" aria-label="Navegação principal">
+      <nav class="main-nav" id="main-nav" aria-label="Navegação principal">
         <a href="#mapa">Mapa de estudo</a>
         <a href="#comparar">Comparar</a>
         <a href="#praticar">Praticar</a>
+        <a href="#pesquisa">Pesquisa</a>
         <a href="#fontes">Fontes</a>
       </nav>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menu</button>
@@ -121,17 +122,32 @@
         </div>
       </section>
 
+      <section class="section-pad research-section" id="pesquisa" aria-labelledby="research-title">
+        <div class="section-heading split-heading">
+          <div><p class="kicker">05 / linhas de pesquisa</p><h2 id="research-title">Como uma cura<br /><em>poderia nascer?</em></h2></div>
+          <p class="section-intro">Hoje não existe cura aprovada. Mas há hipóteses testáveis: interromper a produção da proteína normal, impedir sua conversão, limpar os agregados e proteger o neurônio.</p>
+        </div>
+        <div class="research-status"><span class="status-pulse"></span><div><strong>O que já é realidade</strong><p>O cuidado atual é de suporte. ION717, um oligonucleotídeo antissenso que tenta reduzir a proteína priônica, está em estudo clínico de primeira administração em humanos — isso ainda não prova eficácia.</p></div><a href="https://clinicaltrials.gov/study/NCT06153966" target="_blank" rel="noreferrer">ver ensaio ↗</a></div>
+        <div class="research-grid">
+          <article class="research-card featured-research"><span class="research-number">01</span><p class="research-label">ALVO MAIS PROMISSOR</p><h3>Reduzir o “combustível” do processo</h3><p>O príon patológico usa a proteína celular normal (PrP<sup>C</sup>) no processo de conversão. Oligonucleotídeos antissenso, RNA de interferência ou edição epigenética poderiam reduzir sua produção.</p><div class="evidence-level"><span class="level-dots"><i></i><i></i><i></i><i class="empty"></i></span> forte em modelos pré-clínicos</div></article>
+          <article class="research-card"><span class="research-number">02</span><p class="research-label">INTERROMPER A CONVERSÃO</p><h3>Estabilizar ou capturar a proteína</h3><p>Anticorpos, moléculas pequenas e chaperonas são estudados para impedir que PrP<sup>C</sup> mude de forma ou para se ligar a formas patológicas.</p><div class="evidence-level"><span class="level-dots"><i></i><i></i><i class="empty"></i><i class="empty"></i></span> resultados mistos</div></article>
+          <article class="research-card"><span class="research-number">03</span><p class="research-label">LIMPAR E PROTEGER</p><h3>Remover agregados, salvar neurônios</h3><p>Outras frentes tentam aumentar a degradação dos agregados, reduzir estresse celular e limitar a neurodegeneração. Podem ser combinadas com um tratamento que reduza PrP.</p><div class="evidence-level"><span class="level-dots"><i></i><i></i><i class="empty"></i><i class="empty"></i></span> ainda experimental</div></article>
+          <article class="research-card"><span class="research-number">04</span><p class="research-label">A JANELA DE TEMPO</p><h3>Agir antes do dano irreversível</h3><p>Como o dano cerebral pode ser extenso quando os sintomas aparecem, diagnóstico precoce e prevenção em pessoas com risco genético podem mudar o cenário.</p><div class="evidence-level"><span class="level-dots"><i></i><i class="empty"></i><i class="empty"></i><i class="empty"></i></span> hipótese em desenvolvimento</div></article>
+        </div>
+        <div class="research-caution"><strong>Como ler a palavra “promissor”</strong><span>Resultado em células, animais ou um ensaio de segurança não equivale a cura. Uma terapia precisa demonstrar segurança, reduzir a progressão e funcionar em estudos clínicos controlados.</span></div>
+      </section>
+
       <section class="practice-section section-pad" id="praticar" aria-labelledby="practice-title">
         <div class="section-heading split-heading">
-          <div><p class="kicker">05 / praticar</p><h2 id="practice-title">Transforme leitura<br /><em>em memória.</em></h2></div>
+          <div><p class="kicker">06 / praticar</p><h2 id="practice-title">Transforme leitura<br /><em>em memória.</em></h2></div>
           <p class="section-intro">Três ferramentas curtas para revisar. O progresso fica apenas neste navegador — nada é enviado ou salvo em conta.</p>
         </div>
         <div class="practice-grid">
           <article class="practice-card quiz-card" id="quiz-card">
-            <div class="practice-card-top"><span class="tool-icon">?</span><span class="tool-meta">QUIZ · 05 QUESTÕES</span></div>
+            <div class="practice-card-top"><span class="tool-icon">?</span><span class="tool-meta">QUIZ · 06 QUESTÕES</span></div>
             <h3>Teste o essencial</h3>
             <p>Responda e veja uma explicação curta depois de cada escolha.</p>
-            <div class="quiz-progress"><span id="quiz-progress-label">Questão 1 de 5</span><span id="quiz-score-label">0 acertos</span></div>
+            <div class="quiz-progress"><span id="quiz-progress-label">Questão 1 de 6</span><span id="quiz-score-label">0 acertos</span></div>
             <div class="progress-track"><span id="quiz-progress-bar"></span></div>
             <div id="quiz-content"></div>
           </article>
@@ -139,7 +155,7 @@
             <div class="practice-card-top"><span class="tool-icon">↻</span><span class="tool-meta">FLASHCARDS · REVISÃO ATIVA</span></div>
             <h3>Vire a ideia</h3>
             <p>Use a lembrança antes de conferir a resposta. Um cartão por vez.</p>
-            <div class="flashcard-stage" id="flashcard" tabindex="0" role="button" aria-label="Virar flashcard"><div class="flashcard-face front"><span class="flashcard-count" id="flashcard-count">01 / 06</span><strong id="flashcard-front">Qual é a diferença central entre CJD clássica e vCJD?</strong><small>toque para virar</small></div><div class="flashcard-face back"><span class="flashcard-count">RESPOSTA</span><p id="flashcard-back">São entidades distintas: a vCJD está associada à exposição à BSE, enquanto a maioria da CJD clássica surge de forma esporádica.</p><small>toque para voltar</small></div></div>
+            <div class="flashcard-stage" id="flashcard" tabindex="0" role="button" aria-label="Virar flashcard"><div class="flashcard-face front"><span class="flashcard-count" id="flashcard-count">01 / 07</span><strong id="flashcard-front">Qual é a diferença central entre CJD clássica e vCJD?</strong><small>toque para virar</small></div><div class="flashcard-face back"><span class="flashcard-count">RESPOSTA</span><p id="flashcard-back">São entidades distintas: a vCJD está associada à exposição à BSE, enquanto a maioria da CJD clássica surge de forma esporádica.</p><small>toque para voltar</small></div></div>
             <button class="outline-button" id="next-flashcard" type="button">Próximo cartão <span>→</span></button>
           </article>
           <article class="practice-card checklist-card">
@@ -154,7 +170,7 @@
 
       <section class="glossary-section section-pad" id="glossario" aria-labelledby="glossary-title">
         <div class="section-heading split-heading">
-          <div><p class="kicker">06 / glossário rápido</p><h2 id="glossary-title">Termos para não<br /><em>perder o fio.</em></h2></div>
+          <div><p class="kicker">07 / glossário rápido</p><h2 id="glossary-title">Termos para não<br /><em>perder o fio.</em></h2></div>
           <label class="glossary-search"><span>⌕</span><input id="glossary-search" type="search" placeholder="Buscar termo" aria-label="Buscar no glossário" /></label>
         </div>
         <div class="glossary-list" id="glossary-list"></div>
@@ -162,12 +178,14 @@
 
       <section class="sources-section section-pad" id="fontes" aria-labelledby="sources-title">
         <div class="sources-inner">
-          <div><p class="kicker">07 / ler com responsabilidade</p><h2 id="sources-title">Fontes antes<br /><em>de certezas.</em></h2><p class="sources-copy">Este site resume conhecimento médico para fins educacionais. Ele não substitui avaliação, diagnóstico ou orientação de profissionais de saúde.</p></div>
+          <div><p class="kicker">08 / ler com responsabilidade</p><h2 id="sources-title">Fontes antes<br /><em>de certezas.</em></h2><p class="sources-copy">Este site resume conhecimento médico para fins educacionais. Ele não substitui avaliação, diagnóstico ou orientação de profissionais de saúde.</p></div>
           <div class="source-list">
             <a href="https://www.cdc.gov/prions/about/index.html" target="_blank" rel="noreferrer"><span>[01]</span><div><strong>CDC · About Prion Diseases</strong><small>Definições, tipos e pontos-chave</small></div><b>↗</b></a>
             <a href="https://www.niaid.nih.gov/diseases-conditions/prion-diseases" target="_blank" rel="noreferrer"><span>[02]</span><div><strong>NIH / NIAID · Prion diseases</strong><small>Mecanismo, doenças humanas e pesquisa</small></div><b>↗</b></a>
             <a href="https://www.who.int/teams/health-product-policy-and-standards/standards-and-specifications/blood-and-products-of-human-origin/blood-products-tse" target="_blank" rel="noreferrer"><span>[03]</span><div><strong>OMS · Transmissible spongiform encephalopathies</strong><small>vCJD, BSE e saúde pública</small></div><b>↗</b></a>
             <a href="https://www.msdmanuals.com/professional/neurologic-disorders/prion-diseases/creutzfeldt-jakob-disease-cjd" target="_blank" rel="noreferrer"><span>[04]</span><div><strong>MSD Manual · CJD</strong><small>Sinais, investigação e cuidado de suporte</small></div><b>↗</b></a>
+            <a href="https://clinicaltrials.gov/study/NCT06153966" target="_blank" rel="noreferrer"><span>[05]</span><div><strong>ClinicalTrials.gov · PrProfile</strong><small>Ensaio de ION717, um ASO direcionado à PrP</small></div><b>↗</b></a>
+            <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11630594/" target="_blank" rel="noreferrer"><span>[06]</span><div><strong>PLoS Pathogens · Therapeutic perspectives</strong><small>Revisão das estratégias experimentais</small></div><b>↗</b></a>
           </div>
         </div>
         <footer class="footer"><span>PRIONLAB / GUIA DE ESTUDO</span><span>Conteúdo sem coleta de dados pessoais · 2026</span><a href="#top">voltar ao topo ↑</a></footer>

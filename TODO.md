@@ -16,3 +16,9 @@
 - [x] A interface é responsiva para celular e desktop, com navegação por âncoras, foco visível e estados de interação claros.
 - [x] A rota `/manus-routes.json` é servida como JSON estático com a rota `/`.
 - [x] O projeto inicia em `0.0.0.0:3000` com `npm start` e não depende de serviços externos para executar as ferramentas.
+
+
+## Pesquisa e possibilidades terapêuticas
+- [x] O site explica que não há cura aprovada atualmente e apresenta, como hipóteses de pesquisa, redução de PrPᶜ, bloqueio da conversão, remoção de agregados, neuroproteção e intervenção precoce.
+- [x] O site diferencia evidência pré-clínica de ensaio em humanos e inclui o registro do estudo PrProfile/ION717 sem prometer eficácia.
+- [x] Quiz, flashcards e glossário foram atualizados com os conceitos de oligonucleotídeo antissenso, PrP-lowering e ensaio clínico.

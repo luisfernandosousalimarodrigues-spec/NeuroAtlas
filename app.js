@@ -96,6 +96,9 @@ const diseases = [
 const glossary = [
   ['Príon', 'Proteína em conformação anormal capaz de induzir alterações em proteínas semelhantes.'],
   ['PrPᶜ / PrPˢᶜ', 'Abreviações usadas para diferenciar a proteína priônica celular normal da forma associada à doença.'],
+  ['Oligonucleotídeo antissenso', 'Fragmento de material genético desenhado para reduzir a produção de uma proteína específica. ION717 é um exemplo investigacional direcionado à proteína priônica.'],
+  ['PrP-lowering', 'Expressão em inglês para estratégias que tentam diminuir a quantidade de proteína priônica normal no sistema nervoso. É uma hipótese terapêutica, não uma cura disponível.'],
+  ['Ensaio clínico', 'Estudo em pessoas para avaliar segurança, dose e possíveis efeitos. Participar de um ensaio não significa receber tratamento comprovadamente eficaz.'],
   ['Ataxia', 'Perda de coordenação dos movimentos, podendo afetar marcha, equilíbrio e fala.'],
   ['Mioclonia', 'Contração muscular breve e involuntária, que pode ocorrer em diferentes doenças neurológicas.'],
   ['RT-QuIC', 'Método laboratorial que pode detectar atividade priônica em amostras como o líquor, dentro de uma avaliação especializada.'],
@@ -109,7 +112,8 @@ const quizQuestions = [
   { question: 'O que “esporádica” significa no contexto da CJD?', answers: ['Que é transmitida por contato casual.', 'Que aparece sem uma causa ou história familiar identificável na maioria dos casos.', 'Que acontece apenas em animais.', 'Que é sempre herdada.'], correct: 1, explanation: 'Esporádica indica que não há uma causa conhecida ou mutação familiar identificada para aquele caso. Não significa transmissão por contato casual.' },
   { question: 'Qual conjunto pode entrar na investigação especializada de CJD?', answers: ['Apenas um exame de sangue comum.', 'MRI, EEG, líquor e exclusão de outras causas.', 'Somente um teste genético.', 'Apenas observação em casa.'], correct: 1, explanation: 'O diagnóstico é uma composição clínica. MRI, EEG e exames do líquor podem contribuir, e outras causas de deterioração rápida precisam ser consideradas.' },
   { question: 'Qual é o foco do cuidado atualmente?', answers: ['Uma vacina curativa já disponível.', 'Cuidado de suporte, controle de sintomas e conforto.', 'Antibiótico para eliminar o príon.', 'Autotratamento com suplementos.'], correct: 1, explanation: 'Não há tratamento curativo estabelecido. O cuidado é de suporte e deve ser individualizado por uma equipe de saúde.' },
-  { question: 'O que é BSE?', answers: ['Uma forma de insônia humana.', 'A encefalopatia espongiforme bovina, uma doença priônica de bovinos.', 'Um exame de líquor.', 'O gene relacionado à FFI.'], correct: 1, explanation: 'BSE é a sigla de bovine spongiform encephalopathy. Em português, é conhecida como encefalopatia espongiforme bovina ou “vaca louca”.' }
+  { question: 'O que é BSE?', answers: ['Uma forma de insônia humana.', 'A encefalopatia espongiforme bovina, uma doença priônica de bovinos.', 'Um exame de líquor.', 'O gene relacionado à FFI.'], correct: 1, explanation: 'BSE é a sigla de bovine spongiform encephalopathy. Em português, é conhecida como encefalopatia espongiforme bovina ou “vaca louca”.' },
+  { question: 'Qual linha de pesquisa tem resultados pré-clínicos especialmente promissores?', answers: ['Aumentar a proteína PrP normal.', 'Reduzir a produção de PrPᶜ.', 'Usar antibióticos comuns.', 'Tratar apenas a insônia.'], correct: 1, explanation: 'Reduzir PrPᶜ pode diminuir o substrato usado na conversão priônica. A estratégia é promissora em modelos, mas ION717 ainda está em ensaio clínico e não é uma cura aprovada.' }
 ];
 
 const flashcards = [
@@ -118,7 +122,8 @@ const flashcards = [
   ['Por que MRI não é um diagnóstico isolado?', 'Porque achados de MRI podem apoiar a suspeita, mas o diagnóstico depende do conjunto clínico e da exclusão de outras causas.'],
   ['O que é RT-QuIC?', 'Um teste do líquor que pode detectar atividade relacionada a príons. Ele é interpretado em conjunto com a história e outros exames.'],
   ['Insônia fatal é o mesmo que insônia comum?', 'Não. As formas priônicas são raríssimas e envolvem um quadro neurológico progressivo. Insônia comum tem muitas outras causas.'],
-  ['Qual é a ideia-chave sobre BSE?', 'BSE é uma doença de bovinos. A vCJD é a condição humana distinta que foi associada à exposição ao agente da BSE.']
+  ['Qual é a ideia-chave sobre BSE?', 'BSE é uma doença de bovinos. A vCJD é a condição humana distinta que foi associada à exposição ao agente da BSE.'],
+  ['O que uma eventual cura provavelmente precisaria fazer?', 'Idealmente, combinar redução de PrPᶜ, bloqueio ou remoção de PrPˢᶜ e proteção do neurônio — além de agir cedo. Isso é uma hipótese de pesquisa, não um tratamento disponível.']
 ];
 
 const compareFields = [

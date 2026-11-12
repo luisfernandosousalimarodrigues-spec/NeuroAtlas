@@ -33,3 +33,7 @@ Site educativo em português brasileiro sobre a doença de Creutzfeldt-Jakob e o
 - **Voz:** direta, cuidadosa e não alarmista. Exemplos: “Separe o que é raro do que é possível.” / “Teste seu entendimento sem transformar informação em diagnóstico.”
 - **Marca:** símbolo de um ponto âmbar atravessando três linhas de conexão, sugerindo uma proteína que muda de conformação e uma rede de conhecimento.
 - **Cor proprietária:** laranja sinal `#F47B4A`.
+
+
+## Atualização terapêutica
+A página ganhou uma seção sobre futuras terapias, distinguindo cuidado atual de hipóteses experimentais. A síntese usa uma revisão científica recente e o registro do ClinicalTrials.gov NCT06153966 para apresentar redução de PrPᶜ, bloqueio de conversão, remoção de agregados/neuroproteção e importância do diagnóstico precoce. O texto evita chamar qualquer linha de pesquisa de cura comprovada.
