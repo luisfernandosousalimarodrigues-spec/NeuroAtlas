@@ -1,6 +1,7 @@
 {
   "routes": [
     { "path": "/", "title": "NeuroAtlas — estudo de doenças priônicas" },
-    { "path": "/atlas", "title": "NeuroAtlas — Atlas neurológico" }
+    { "path": "/atlas", "title": "NeuroAtlas — Atlas neurológico" },
+    { "path": "/atlas.html", "title": "NeuroAtlas — Atlas neurológico" }
   ]
 }
