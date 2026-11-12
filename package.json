@@ -1,0 +1,10 @@
+{
+  "name": "prionlab",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Site educacional sobre doenças priônicas",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  }
+}

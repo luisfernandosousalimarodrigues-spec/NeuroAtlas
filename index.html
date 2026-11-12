@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#101D2A" />
+  <meta name="description" content="PrionLab: guia de estudo interativo sobre doença de Creutzfeldt-Jakob e outras doenças priônicas." />
+  <title>PrionLab — estudo de doenças priônicas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="site-shell">
+    <header class="topbar">
+      <a class="brand" href="#top" aria-label="PrionLab, início">
+        <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+        <span><strong>Prion</strong><em>Lab</em></span>
+      </a>
+      <nav class="main-nav" aria-label="Navegação principal">
+        <a href="#mapa">Mapa de estudo</a>
+        <a href="#comparar">Comparar</a>
+        <a href="#praticar">Praticar</a>
+        <a href="#fontes">Fontes</a>
+      </nav>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menu</button>
+    </header>
+
+    <main id="top">
+      <section class="hero section-pad" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-dot"></span> Laboratório de estudo · atualização editorial 2026</p>
+          <h1 id="hero-title">Entenda o que muda quando uma proteína muda de forma.</h1>
+          <p class="hero-lede">Um guia visual e interativo sobre a doença de Creutzfeldt-Jakob, suas variantes e outras doenças priônicas — com contexto para estudar sem transformar informação em diagnóstico.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#mapa">Começar pelo mapa <span aria-hidden="true">↘</span></a>
+            <button class="text-button" type="button" data-scroll-to="praticar">Ir direto às ferramentas <span aria-hidden="true">→</span></button>
+          </div>
+          <div class="hero-note"><span class="note-line"></span><span>Conteúdo educativo. Em caso de sintomas ou preocupação, procure uma equipe de saúde.</span></div>
+        </div>
+        <div class="hero-visual" aria-label="Ilustração abstrata de conexões entre proteínas">
+          <div class="visual-orbit orbit-one"></div>
+          <div class="visual-orbit orbit-two"></div>
+          <div class="visual-core"><span class="core-dot"></span><span class="core-label">PrP<sup>C</sup> → PrP<sup>Sc</sup></span></div>
+          <span class="visual-node node-a"></span><span class="visual-node node-b"></span><span class="visual-node node-c"></span>
+          <div class="visual-caption"><strong>01</strong><span>O mecanismo em estudo</span></div>
+        </div>
+      </section>
+
+      <section class="signal-strip" aria-label="Pontos-chave">
+        <div><span class="signal-number">01</span><strong>Rara</strong><small>Doenças priônicas são incomuns.</small></div>
+        <div><span class="signal-number">02</span><strong>Progressiva</strong><small>Os sintomas evoluem após o início.</small></div>
+        <div><span class="signal-number">03</span><strong>Sem autodiagnóstico</strong><small>Investigação é clínica e especializada.</small></div>
+      </section>
+
+      <section class="section-pad study-map" id="mapa" aria-labelledby="map-title">
+        <div class="section-heading split-heading">
+          <div><p class="kicker">01 / mapa de estudo</p><h2 id="map-title">Comece pelo mapa.<br /><em>Depois aprofunde.</em></h2></div>
+          <p class="section-intro">A mesma sigla pode esconder histórias diferentes. Use os blocos abaixo para separar mecanismo, origem, sinais e o que a medicina consegue investigar.</p>
+        </div>
+        <div class="map-layout">
+          <aside class="side-label"><span>LEITURA BASE</span><span>⟋</span><span>06 MIN</span></aside>
+          <div class="map-content">
+            <div class="definition-card">
+              <div class="definition-stamp">DEFINIÇÃO DE BOLSO</div>
+              <p>Príons são formas anormais de uma proteína que existe normalmente no organismo. Ao alterar a conformação de proteínas vizinhas, o processo pode produzir dano cerebral e outros sintomas neurológicos.</p>
+              <div class="source-line"><span>CDC · NIH/NIAID</span><a href="#fontes">ver fontes ↗</a></div>
+            </div>
+            <div class="content-grid three-up">
+              <article class="mini-card accent-orange"><span class="card-index">A</span><h3>O que é CJD?</h3><p>Uma doença priônica humana rara e rapidamente progressiva. A forma clássica pode ser esporádica, genética/familiar ou, raramente, iatrogênica.</p><button class="card-link" data-open="cjd">abrir ficha <span>↗</span></button></article>
+              <article class="mini-card accent-lime"><span class="card-index">B</span><h3>O que é vCJD?</h3><p>Uma doença distinta da CJD clássica, associada à exposição a carne de bovinos com encefalopatia espongiforme bovina (BSE).</p><button class="card-link" data-open="vcjd">abrir ficha <span>↗</span></button></article>
+              <article class="mini-card accent-blue"><span class="card-index">C</span><h3>O que observar?</h3><p>Demência rapidamente progressiva, ataxia, mioclonias e alterações psiquiátricas podem fazer parte do quadro — mas não são exclusivas dele.</p><button class="card-link" data-open="sinais">abrir ficha <span>↗</span></button></article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-pad explorer-section" id="explorar" aria-labelledby="explore-title">
+        <div class="section-heading split-heading">
+          <div><p class="kicker">02 / explorar as formas</p><h2 id="explore-title">Uma família de doenças.<br /><em>Várias origens.</em></h2></div>
+          <p class="section-intro">Filtre por origem e abra cada ficha para comparar o que se sabe sobre cada condição. Os rótulos são didáticos, não critérios de diagnóstico.</p>
+        </div>
+        <div class="tool-bar" role="search">
+          <label class="search-box"><span aria-hidden="true">⌕</span><input id="disease-search" type="search" placeholder="Buscar por doença, origem ou sintoma" aria-label="Buscar nas fichas de doenças" /></label>
+          <div class="filter-pills" role="group" aria-label="Filtrar por origem">
+            <button class="filter-pill active" data-filter="all">Todas</button>
+            <button class="filter-pill" data-filter="esporadica">Esporádica</button>
+            <button class="filter-pill" data-filter="genetica">Genética</button>
+            <button class="filter-pill" data-filter="adquirida">Adquirida</button>
+            <button class="filter-pill" data-filter="animal">Animal</button>
+          </div>
+        </div>
+        <div class="disease-grid" id="disease-grid" aria-live="polite"></div>
+        <p class="empty-state" id="empty-state" hidden>Nenhuma ficha encontrada. Tente outro termo.</p>
+      </section>
+
+      <section class="compare-section section-pad" id="comparar" aria-labelledby="compare-title">
+        <div class="section-heading split-heading light-heading">
+          <div><p class="kicker">03 / separar as siglas</p><h2 id="compare-title">Compare sem misturar<br /><em>o que é diferente.</em></h2></div>
+          <p class="section-intro">Escolha duas condições para colocar lado a lado origem, idade típica, início clínico e relação com transmissão.</p>
+        </div>
+        <div class="compare-controls">
+          <label>Condição A<select id="compare-a"></select></label>
+          <span class="versus">VS</span>
+          <label>Condição B<select id="compare-b"></select></label>
+        </div>
+        <div class="comparison-table" id="comparison-table"></div>
+      </section>
+
+      <section class="section-pad timeline-section" id="linha-do-tempo" aria-labelledby="timeline-title">
+        <div class="section-heading split-heading">
+          <div><p class="kicker">04 / linha do tempo</p><h2 id="timeline-title">Da proteína ao<br /><em>cuidado.</em></h2></div>
+          <p class="section-intro">Uma visão compacta do raciocínio: o mecanismo ainda é investigado, os sintomas são inespecíficos e a confirmação exige contexto especializado.</p>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item"><span class="timeline-marker">01</span><div><p class="timeline-tag">MECANISMO</p><h3>Uma proteína perde sua forma normal</h3><p>A conversão anormal pode se acumular no tecido nervoso e desencadear dano progressivo.</p></div></article>
+          <article class="timeline-item"><span class="timeline-marker">02</span><div><p class="timeline-tag">CLÍNICA</p><h3>O padrão muda rapidamente</h3><p>Memória, coordenação, visão, comportamento e movimentos podem ser afetados em combinações diferentes.</p></div></article>
+          <article class="timeline-item"><span class="timeline-marker">03</span><div><p class="timeline-tag">INVESTIGAÇÃO</p><h3>O diagnóstico é uma composição</h3><p>MRI, EEG, análise do líquor — incluindo RT-QuIC em contextos apropriados — e exclusão de outras causas entram na avaliação.</p></div></article>
+          <article class="timeline-item"><span class="timeline-marker">04</span><div><p class="timeline-tag">CUIDADO</p><h3>O foco é suporte e segurança</h3><p>Não há tratamento curativo estabelecido. O cuidado prioriza sintomas, conforto, comunicação e apoio à família.</p></div></article>
+        </div>
+      </section>
+
+      <section class="practice-section section-pad" id="praticar" aria-labelledby="practice-title">
+        <div class="section-heading split-heading">
+          <div><p class="kicker">05 / praticar</p><h2 id="practice-title">Transforme leitura<br /><em>em memória.</em></h2></div>
+          <p class="section-intro">Três ferramentas curtas para revisar. O progresso fica apenas neste navegador — nada é enviado ou salvo em conta.</p>
+        </div>
+        <div class="practice-grid">
+          <article class="practice-card quiz-card" id="quiz-card">
+            <div class="practice-card-top"><span class="tool-icon">?</span><span class="tool-meta">QUIZ · 05 QUESTÕES</span></div>
+            <h3>Teste o essencial</h3>
+            <p>Responda e veja uma explicação curta depois de cada escolha.</p>
+            <div class="quiz-progress"><span id="quiz-progress-label">Questão 1 de 5</span><span id="quiz-score-label">0 acertos</span></div>
+            <div class="progress-track"><span id="quiz-progress-bar"></span></div>
+            <div id="quiz-content"></div>
+          </article>
+          <article class="practice-card flashcard-card">
+            <div class="practice-card-top"><span class="tool-icon">↻</span><span class="tool-meta">FLASHCARDS · REVISÃO ATIVA</span></div>
+            <h3>Vire a ideia</h3>
+            <p>Use a lembrança antes de conferir a resposta. Um cartão por vez.</p>
+            <div class="flashcard-stage" id="flashcard" tabindex="0" role="button" aria-label="Virar flashcard"><div class="flashcard-face front"><span class="flashcard-count" id="flashcard-count">01 / 06</span><strong id="flashcard-front">Qual é a diferença central entre CJD clássica e vCJD?</strong><small>toque para virar</small></div><div class="flashcard-face back"><span class="flashcard-count">RESPOSTA</span><p id="flashcard-back">São entidades distintas: a vCJD está associada à exposição à BSE, enquanto a maioria da CJD clássica surge de forma esporádica.</p><small>toque para voltar</small></div></div>
+            <button class="outline-button" id="next-flashcard" type="button">Próximo cartão <span>→</span></button>
+          </article>
+          <article class="practice-card checklist-card">
+            <div class="practice-card-top"><span class="tool-icon">✓</span><span class="tool-meta">CHECKLIST · PLANO DE REVISÃO</span></div>
+            <h3>Feche o ciclo</h3>
+            <p>Marque o que você já consegue explicar em voz alta.</p>
+            <div class="checklist" id="checklist"></div>
+            <div class="checklist-footer"><span id="checklist-status">0 de 4 concluídos</span><button class="text-button small" id="reset-checklist" type="button">resetar</button></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="glossary-section section-pad" id="glossario" aria-labelledby="glossary-title">
+        <div class="section-heading split-heading">
+          <div><p class="kicker">06 / glossário rápido</p><h2 id="glossary-title">Termos para não<br /><em>perder o fio.</em></h2></div>
+          <label class="glossary-search"><span>⌕</span><input id="glossary-search" type="search" placeholder="Buscar termo" aria-label="Buscar no glossário" /></label>
+        </div>
+        <div class="glossary-list" id="glossary-list"></div>
+      </section>
+
+      <section class="sources-section section-pad" id="fontes" aria-labelledby="sources-title">
+        <div class="sources-inner">
+          <div><p class="kicker">07 / ler com responsabilidade</p><h2 id="sources-title">Fontes antes<br /><em>de certezas.</em></h2><p class="sources-copy">Este site resume conhecimento médico para fins educacionais. Ele não substitui avaliação, diagnóstico ou orientação de profissionais de saúde.</p></div>
+          <div class="source-list">
+            <a href="https://www.cdc.gov/prions/about/index.html" target="_blank" rel="noreferrer"><span>[01]</span><div><strong>CDC · About Prion Diseases</strong><small>Definições, tipos e pontos-chave</small></div><b>↗</b></a>
+            <a href="https://www.niaid.nih.gov/diseases-conditions/prion-diseases" target="_blank" rel="noreferrer"><span>[02]</span><div><strong>NIH / NIAID · Prion diseases</strong><small>Mecanismo, doenças humanas e pesquisa</small></div><b>↗</b></a>
+            <a href="https://www.who.int/teams/health-product-policy-and-standards/standards-and-specifications/blood-and-products-of-human-origin/blood-products-tse" target="_blank" rel="noreferrer"><span>[03]</span><div><strong>OMS · Transmissible spongiform encephalopathies</strong><small>vCJD, BSE e saúde pública</small></div><b>↗</b></a>
+            <a href="https://www.msdmanuals.com/professional/neurologic-disorders/prion-diseases/creutzfeldt-jakob-disease-cjd" target="_blank" rel="noreferrer"><span>[04]</span><div><strong>MSD Manual · CJD</strong><small>Sinais, investigação e cuidado de suporte</small></div><b>↗</b></a>
+          </div>
+        </div>
+        <footer class="footer"><span>PRIONLAB / GUIA DE ESTUDO</span><span>Conteúdo sem coleta de dados pessoais · 2026</span><a href="#top">voltar ao topo ↑</a></footer>
+      </section>
+    </main>
+  </div>
+  <dialog class="detail-dialog" id="detail-dialog"><button class="dialog-close" type="button" aria-label="Fechar">×</button><div id="dialog-content"></div></dialog>
+  <script src="/app.js"></script>
+</body>
+</html>
