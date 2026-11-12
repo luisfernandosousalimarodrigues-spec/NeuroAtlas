@@ -4,8 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#101D2A" />
-  <meta name="description" content="PrionLab: atlas de estudo interativo sobre doenças do sistema nervoso, com uma trilha especial para Creutzfeldt-Jakob e doenças priônicas." />
-  <title>PrionLab — estudo de doenças priônicas</title>
+  <meta name="description" content="NeuroAtlas: guia de estudo sobre doença de Creutzfeldt-Jakob e doenças priônicas, com extensão detalhada para o sistema nervoso." />
+  <title>NeuroAtlas — estudo de doenças priônicas</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -14,13 +14,13 @@
 <body>
   <div class="site-shell">
     <header class="topbar">
-      <a class="brand" href="#top" aria-label="PrionLab, início">
+      <a class="brand" href="#top" aria-label="NeuroAtlas, início">
         <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
-        <span><strong>Prion</strong><em>Lab</em></span>
+        <span><strong>Neuro</strong><em>Atlas</em></span>
       </a>
       <nav class="main-nav" id="main-nav" aria-label="Navegação principal">
         <a href="#mapa">Mapa de estudo</a>
-        <a href="#atlas">Atlas neurológico</a>
+        <a href="/atlas">Atlas neurológico</a>
         <a href="#comparar">Comparar</a>
         <a href="#praticar">Praticar</a>
         <a href="#pesquisa">Pesquisa</a>
@@ -33,8 +33,8 @@
       <section class="hero section-pad" aria-labelledby="hero-title">
         <div class="hero-copy">
           <p class="eyebrow"><span class="eyebrow-dot"></span> Laboratório de estudo · atualização editorial 2026</p>
-          <h1 id="hero-title">Do príon ao neurônio: entenda o sistema nervoso por inteiro.</h1>
-          <p class="hero-lede">Um atlas visual e interativo sobre doenças do sistema nervoso — de CJD e outras doenças priônicas a epilepsias, AVC, esclerose múltipla, neuropatias e distúrbios do movimento.</p>
+          <h1 id="hero-title">Entenda o que muda quando uma proteína muda de forma.</h1>
+          <p class="hero-lede">Um guia visual e interativo sobre a doença de Creutzfeldt-Jakob, suas variantes e outras doenças priônicas — com uma extensão ampla para explorar todo o sistema nervoso.</p>
           <div class="hero-actions">
             <a class="button button-primary" href="#mapa">Começar pelo mapa <span aria-hidden="true">↘</span></a>
             <button class="text-button" type="button" data-scroll-to="praticar">Ir direto às ferramentas <span aria-hidden="true">→</span></button>
@@ -97,26 +97,9 @@
         <p class="empty-state" id="empty-state" hidden>Nenhuma ficha encontrada. Tente outro termo.</p>
       </section>
 
-      <section class="section-pad neuro-section" id="atlas" aria-labelledby="atlas-title">
-        <div class="section-heading split-heading">
-          <div><p class="kicker">03 / atlas do sistema nervoso</p><h2 id="atlas-title">Uma visão ampla.<br /><em>Sem perder o foco.</em></h2></div>
-          <p class="section-intro">CJD continua aqui como uma trilha especializada. Ao lado dela, explore condições que afetam cérebro, medula, nervos periféricos, vasos e comunicação entre neurônios.</p>
-        </div>
-        <div class="neuro-toolbar" role="search">
-          <label class="search-box"><span aria-hidden="true">⌕</span><input id="neuro-search" type="search" placeholder="Buscar uma doença ou área" aria-label="Buscar no atlas neurológico" /></label>
-          <div class="filter-pills" role="group" aria-label="Filtrar o atlas por área do sistema nervoso">
-            <button class="neuro-filter active" data-neuro-filter="all">Todas</button>
-            <button class="neuro-filter" data-neuro-filter="cerebro">Cérebro</button>
-            <button class="neuro-filter" data-neuro-filter="crises">Crises</button>
-            <button class="neuro-filter" data-neuro-filter="imune">Imune</button>
-            <button class="neuro-filter" data-neuro-filter="nervos">Nervos</button>
-            <button class="neuro-filter" data-neuro-filter="vascular">Vascular</button>
-            <button class="neuro-filter" data-neuro-filter="movimento">Movimento</button>
-          </div>
-        </div>
-        <div class="neuro-grid" id="neuro-grid" aria-live="polite"></div>
-        <p class="empty-state" id="neuro-empty-state" hidden>Nenhuma condição encontrada. Tente outro termo.</p>
-        <div class="atlas-note"><strong>Como ler o atlas</strong><span>As categorias indicam o sistema mais envolvido, mas muitas doenças atravessam mais de uma área. Uma ficha educativa não substitui uma classificação clínica individual.</span></div>
+      <section class="section-pad atlas-teaser" id="atlas" aria-labelledby="atlas-teaser-title">
+        <div class="atlas-teaser-copy"><p class="kicker">03 / extensão do NeuroAtlas</p><h2 id="atlas-teaser-title">Quer ampliar o<br /><em>campo de estudo?</em></h2><p>Abra o Atlas neurológico para acessar uma experiência detalhada sobre cérebro, medula, nervos, vasos, crises, movimento, neuroinfecções e sistema imune.</p><a class="button button-primary" href="/atlas">Abrir o Atlas completo <span aria-hidden="true">↗</span></a></div>
+        <div class="atlas-teaser-map"><span class="map-line line-one"></span><span class="map-line line-two"></span><span class="map-line line-three"></span><span class="map-node node-one">CÉREBRO</span><span class="map-node node-two">NERVOS</span><span class="map-node node-three">IMUNE</span><span class="map-node node-four">VASCULAR</span><strong>NEURO<br />ATLAS</strong></div>
       </section>
 
       <section class="compare-section section-pad" id="comparar" aria-labelledby="compare-title">
@@ -214,7 +197,7 @@
             <a href="https://www.cdc.gov/rabies/about/index.html" target="_blank" rel="noreferrer"><span>[09]</span><div><strong>CDC · About Rabies</strong><small>Transmissão, sinais e profilaxia pós-exposição</small></div><b>↗</b></a>
           </div>
         </div>
-        <footer class="footer"><span>PRIONLAB / GUIA DE ESTUDO</span><span>Conteúdo sem coleta de dados pessoais · 2026</span><a href="#top">voltar ao topo ↑</a></footer>
+        <footer class="footer"><span>NEUROATLAS / TRILHA PRIÔNICA</span><span>Conteúdo sem coleta de dados pessoais · 2026</span><a href="#top">voltar ao topo ↑</a></footer>
       </section>
     </main>
   </div>

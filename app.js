@@ -103,7 +103,7 @@ const neuroCatalog = [
   { id: 'enxaqueca', title: 'Enxaqueca', code: 'CEFALEIA', area: 'Cérebro / dor', filters: ['cerebro'], summary: 'Distúrbio neurológico recorrente que pode envolver dor de cabeça, náusea e sensibilidade à luz, som ou movimento.', detail: 'Enxaqueca é uma condição neurológica, não apenas uma dor de cabeça comum. O padrão dos episódios e sinais de alerta orienta a avaliação.', facts: [['Sistema mais envolvido', 'Redes cerebrais de dor e processamento sensorial.'], ['Ponto de estudo', 'Pode ocorrer com ou sem aura.'], ['Não confundir', 'Uma dor de cabeça súbita e muito intensa é sinal de urgência.']] },
   { id: 'meningite', title: 'Meningite e encefalite', code: 'INFECCIOSA', area: 'Neuroinfecção', filters: ['cerebro', 'imune'], summary: 'Inflamação das membranas que envolvem o sistema nervoso ou do próprio tecido cerebral, com causas infecciosas e não infecciosas.', detail: 'Meningite e encefalite podem evoluir rapidamente. Febre, rigidez de nuca, confusão, convulsão ou alteração importante do estado mental exigem atendimento urgente.', facts: [['Sistema mais envolvido', 'Meninges, cérebro e, em alguns casos, medula.'], ['Ponto de estudo', 'A causa pode mudar exames, isolamento e tratamento.'], ['Não confundir', 'Não é um quadro para automedicação ou espera prolongada.']] },
   { id: 'raiva', title: 'Raiva', code: 'VIRAL', area: 'Neuroinfecção', filters: ['cerebro', 'imune'], summary: 'Infecção viral que alcança o sistema nervoso central, geralmente após mordida ou arranhão de animal infectado; é prevenível se o cuidado começar antes dos sintomas.', detail: 'A raiva é uma urgência de saúde pública. Após possível exposição, a ferida deve ser lavada imediatamente e a pessoa deve buscar atendimento urgente para avaliar profilaxia pós-exposição. Quando os sinais clínicos começam, a doença é quase sempre fatal.', facts: [['Transmissão', 'Principalmente por mordidas ou arranhões de animais infectados.'], ['Prevenção', 'Lavagem da ferida e avaliação rápida para imunoglobulina e vacina, quando indicadas.'], ['Alerta', 'Não espere sintomas e não tente decidir o risco sozinho.'] ] },
-  { id: 'cjd-atlas', title: 'CJD e doenças priônicas', code: 'PRIÔNICA', area: 'Neurodegeneração rara', filters: ['cerebro'], summary: 'Trilha especializada do PrionLab para CJD clássica, vCJD, insônia fatal, kuru e BSE.', detail: 'A CJD permanece no atlas como um módulo de aprofundamento. Ela é uma doença priônica rara e rapidamente progressiva, diferente de muitas condições neurológicas mais comuns.', facts: [['Sistema mais envolvido', 'Cérebro e redes neurológicas.'], ['Ponto de estudo', 'Príons envolvem alteração de conformação proteica.'], ['Não confundir', 'CJD não é sinônimo de neuropatia periférica.']] }
+  { id: 'cjd-atlas', title: 'CJD e doenças priônicas', code: 'PRIÔNICA', area: 'Neurodegeneração rara', filters: ['cerebro'], summary: 'Trilha especializada do NeuroAtlas para CJD clássica, vCJD, insônia fatal, kuru e BSE.', detail: 'A CJD permanece na trilha principal como um módulo de aprofundamento. Ela é uma doença priônica rara e rapidamente progressiva, diferente de muitas condições neurológicas mais comuns.', facts: [['Sistema mais envolvido', 'Cérebro e redes neurológicas.'], ['Ponto de estudo', 'Príons envolvem alteração de conformação proteica.'], ['Não confundir', 'CJD não é sinônimo de neuropatia periférica.']] }
 ];
 
 const glossary = [
@@ -200,15 +200,17 @@ function renderNeuroCards() {
   neuroEmptyState.hidden = visible.length > 0;
 }
 
-neuroSearch.addEventListener('input', renderNeuroCards);
-document.querySelectorAll('.neuro-filter').forEach((button) => {
-  button.addEventListener('click', () => {
-    document.querySelectorAll('.neuro-filter').forEach((item) => item.classList.remove('active'));
-    button.classList.add('active');
-    activeNeuroFilter = button.dataset.neuroFilter;
-    renderNeuroCards();
+if (neuroSearch) {
+  neuroSearch.addEventListener('input', renderNeuroCards);
+  document.querySelectorAll('.neuro-filter').forEach((button) => {
+    button.addEventListener('click', () => {
+      document.querySelectorAll('.neuro-filter').forEach((item) => item.classList.remove('active'));
+      button.classList.add('active');
+      activeNeuroFilter = button.dataset.neuroFilter;
+      renderNeuroCards();
+    });
   });
-});
+}
 
 searchInput.addEventListener('input', renderDiseaseCards);
 document.querySelectorAll('.filter-pill').forEach((button) => {
@@ -365,7 +367,6 @@ document.querySelectorAll('[data-scroll-to]').forEach((button) => button.addEven
 document.querySelectorAll('.main-nav a').forEach((link) => link.addEventListener('click', () => document.querySelector('.main-nav').classList.remove('open')));
 
 renderDiseaseCards();
-renderNeuroCards();
 renderComparison();
 renderQuiz();
 renderFlashcard();

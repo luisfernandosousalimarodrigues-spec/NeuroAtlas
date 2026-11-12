@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#101D2A" />
+  <meta name="description" content="Atlas neurológico NeuroAtlas: catálogo educativo de doenças do sistema nervoso." />
+  <title>NeuroAtlas — Atlas neurológico</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body class="atlas-page">
+  <div class="site-shell">
+    <header class="topbar">
+      <a class="brand" href="/" aria-label="NeuroAtlas, página inicial"><span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span><span><strong>Neuro</strong><em>Atlas</em></span></a>
+      <nav class="main-nav" id="main-nav" aria-label="Navegação do Atlas"><a href="/">Trilha CJD</a><a href="#mapa-sistemas">Mapa por sistemas</a><a href="#catalogo">Catálogo</a><a href="#como-estudar">Como estudar</a></nav>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menu</button>
+    </header>
+
+    <main>
+      <section class="atlas-hero section-pad">
+        <div class="atlas-hero-copy"><p class="eyebrow"><span class="eyebrow-dot"></span> Extensão detalhada · sistema nervoso</p><h1>Um mapa grande para navegar pelo sistema nervoso.</h1><p class="hero-lede">O NeuroAtlas amplia a trilha de CJD para uma biblioteca de estudo com doenças do cérebro, medula, nervos, vasos, sistema imune e redes do movimento.</p><div class="hero-actions"><a class="button button-primary" href="#catalogo">Explorar catálogo <span>↓</span></a><a class="text-button" href="/">← voltar à trilha priônica</a></div></div>
+        <div class="atlas-hero-index"><span class="index-caption">ÍNDICE DE SISTEMAS</span><strong>09</strong><span>trilhas iniciais<br />para estudar</span><div class="index-rule"></div><small>O mesmo sintoma pode nascer em sistemas diferentes. Comece pelo mecanismo.</small></div>
+      </section>
+
+      <section class="atlas-stats"><div><strong>09</strong><span>condições na primeira coleção</span></div><div><strong>07</strong><span>filtros por área</span></div><div><strong>03</strong><span>camadas por ficha</span></div><div><strong>01</strong><span>regra: sem autodiagnóstico</span></div></section>
+
+      <section class="section-pad system-map-section" id="mapa-sistemas" aria-labelledby="systems-title">
+        <div class="section-heading split-heading"><div><p class="kicker">01 / mapa por sistemas</p><h2 id="systems-title">Escolha uma<br /><em>porta de entrada.</em></h2></div><p class="section-intro">As categorias são um mapa didático, não uma classificação rígida. Uma condição pode aparecer em mais de uma trilha porque o sistema nervoso funciona em rede.</p></div>
+        <div class="systems-grid">
+          <article class="system-card system-cerebro"><span>01</span><h3>Cérebro</h3><p>Cognição, percepção, dor, comportamento e redes corticais.</p><button type="button" data-system-filter="cerebro">ver condições →</button></article>
+          <article class="system-card system-crises"><span>02</span><h3>Crises</h3><p>Atividade elétrica, consciência e eventos epilépticos.</p><button type="button" data-system-filter="crises">ver condições →</button></article>
+          <article class="system-card system-imune"><span>03</span><h3>Imune</h3><p>Inflamação, mielina, meninges e neuroinfecções.</p><button type="button" data-system-filter="imune">ver condições →</button></article>
+          <article class="system-card system-nervos"><span>04</span><h3>Nervos</h3><p>Vias periféricas, sensibilidade, força e dor neuropática.</p><button type="button" data-system-filter="nervos">ver condições →</button></article>
+          <article class="system-card system-vascular"><span>05</span><h3>Vascular</h3><p>Fluxo sanguíneo, isquemia, sangramento e tempo de resposta.</p><button type="button" data-system-filter="vascular">ver condições →</button></article>
+          <article class="system-card system-movimento"><span>06</span><h3>Movimento</h3><p>Circuitos motores, coordenação e comunicação neuromuscular.</p><button type="button" data-system-filter="movimento">ver condições →</button></article>
+        </div>
+      </section>
+
+      <section class="section-pad atlas-catalog-section" id="catalogo" aria-labelledby="catalog-title">
+        <div class="section-heading split-heading"><div><p class="kicker">02 / catálogo vivo</p><h2 id="catalog-title">Procure por doença,<br /><em>área ou mecanismo.</em></h2></div><p class="section-intro">Cada ficha começa com uma visão geral e abre uma camada de estudo: sistema envolvido, ideia-chave e o que não deve ser concluído sem avaliação clínica.</p></div>
+        <div class="atlas-toolbar"><label class="search-box"><span aria-hidden="true">⌕</span><input id="atlas-search" type="search" placeholder="Buscar no catálogo" aria-label="Buscar no catálogo neurológico" /></label><div class="filter-pills" role="group" aria-label="Filtros do catálogo"><button class="atlas-filter active" data-filter="all">Todas</button><button class="atlas-filter" data-filter="cerebro">Cérebro</button><button class="atlas-filter" data-filter="crises">Crises</button><button class="atlas-filter" data-filter="imune">Imune</button><button class="atlas-filter" data-filter="nervos">Nervos</button><button class="atlas-filter" data-filter="vascular">Vascular</button><button class="atlas-filter" data-filter="movimento">Movimento</button></div></div>
+        <div class="atlas-catalog-grid" id="atlas-grid" aria-live="polite"></div><p class="empty-state" id="atlas-empty" hidden>Nenhuma condição encontrada.</p>
+      </section>
+
+      <section class="section-pad how-study-section" id="como-estudar" aria-labelledby="how-title"><div class="section-heading split-heading"><div><p class="kicker">03 / método de estudo</p><h2 id="how-title">Leia uma ficha<br /><em>em camadas.</em></h2></div><p class="section-intro">A ordem abaixo ajuda a evitar o salto direto de um sintoma para um diagnóstico.</p></div><div class="study-steps"><article><span>01</span><h3>Localize</h3><p>Qual parte do sistema nervoso parece estar mais envolvida: cérebro, medula, nervos ou vasos?</p></article><article><span>02</span><h3>Descreva</h3><p>Quais sinais aparecem, com que velocidade e em qual contexto? Sintoma é pista, não conclusão.</p></article><article><span>03</span><h3>Investigue</h3><p>Quais exames podem responder à pergunta clínica? O exame deve ser escolhido por profissionais.</p></article><article><span>04</span><h3>Cuide</h3><p>Quais medidas reduzem risco, aliviam sintomas ou exigem urgência? A resposta depende da causa.</p></article></div></section>
+
+      <section class="attention-section section-pad"><div class="attention-mark">!</div><div><p class="kicker">camada de segurança</p><h2>Sinais súbitos<br /><em>mudam a prioridade.</em></h2><p>Fraqueza ou dormência súbita de um lado, alteração importante da fala, convulsão prolongada, confusão intensa, febre com rigidez de nuca ou possível exposição à raiva exigem atendimento urgente. Este Atlas é material de estudo, não triagem.</p></div><a class="button button-primary" href="/">Voltar à CJD <span>↗</span></a></section>
+
+      <section class="sources-section section-pad atlas-sources"><div class="sources-inner"><div><p class="kicker">04 / referências</p><h2>Fontes antes<br /><em>de certezas.</em></h2><p class="sources-copy">O Atlas organiza conceitos para estudo e aponta para fontes institucionais. A coleção pode crescer sem transformar um resumo em diagnóstico.</p></div><div class="source-list"><a href="https://www.ninds.nih.gov/health-information/disorders" target="_blank" rel="noreferrer"><span>[01]</span><div><strong>NINDS · All Disorders</strong><small>Catálogo institucional de doenças neurológicas</small></div><b>↗</b></a><a href="https://www.who.int/news/item/14-03-2024-over-1-in-3-people-affected-by-neurological-conditions--the-leading-cause-of-illness-and-disability-worldwide" target="_blank" rel="noreferrer"><span>[02]</span><div><strong>OMS · condições neurológicas</strong><small>Panorama global e categorias amplas</small></div><b>↗</b></a><a href="https://www.cdc.gov/rabies/about/index.html" target="_blank" rel="noreferrer"><span>[03]</span><div><strong>CDC · About Rabies</strong><small>Transmissão e profilaxia pós-exposição</small></div><b>↗</b></a><a href="https://www.cdc.gov/prions/about/index.html" target="_blank" rel="noreferrer"><span>[04]</span><div><strong>CDC · About Prion Diseases</strong><small>Trilha especializada de CJD</small></div><b>↗</b></a></div></div><footer class="footer"><span>NEUROATLAS / EXTENSÃO DE ESTUDO</span><span>Conteúdo sem coleta de dados pessoais · 2026</span><a href="#top">voltar ao topo ↑</a></footer></section>
+    </main>
+  </div>
+  <dialog class="detail-dialog" id="atlas-dialog"><button class="dialog-close" type="button" aria-label="Fechar">×</button><div id="atlas-dialog-content"></div></dialog>
+  <script src="/atlas.js"></script>
+</body>
+</html>

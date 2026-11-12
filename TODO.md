@@ -1,4 +1,4 @@
-# PrionLab — entregas
+# NeuroAtlas — entregas
 
 ## Conteúdo educativo e responsabilidade
 - [x] O site informa sobre a doença de Creutzfeldt-Jakob e doenças priônicas relacionadas, incluindo insônia fatal, doença da vaca louca/BSE, vCJD, kuru e formas genética e iatrogênica.
@@ -34,3 +34,10 @@
 ## Neuroinfecção adicional
 - [x] O Atlas inclui raiva como neuroinfecção viral, com transmissão, prevenção pós-exposição e alerta de urgência.
 - [x] A ficha de raiva aponta para o CDC e evita aconselhamento individual sobre risco ou vacinação.
+
+
+## Arquitetura da experiência
+- [x] A marca do site é NeuroAtlas.
+- [x] A home principal permanece focada em CJD e doenças priônicas.
+- [x] O Atlas neurológico foi movido para `/atlas` e abre uma experiência grande e detalhada ao clique.
+- [x] O manifesto de rotas declara `/` e `/atlas`, e o servidor entrega as duas páginas.

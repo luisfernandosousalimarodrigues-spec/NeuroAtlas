@@ -1,4 +1,4 @@
-# PrionLab — plano de implementação
+# NeuroAtlas — plano de implementação
 
 ## Produto
 Site educativo em português brasileiro sobre a doença de Creutzfeldt-Jakob e outras doenças priônicas. A experiência deve ensinar sem sugerir autodiagnóstico, com referências institucionais visíveis, linguagem acessível e recursos de estudo além de texto corrido.
@@ -41,3 +41,7 @@ A página ganhou uma seção sobre futuras terapias, distinguindo cuidado atual 
 
 ## Atualização de escopo neurológico
 O site agora possui um Atlas do sistema nervoso separado do explorador de doenças priônicas. A primeira camada cobre epilepsia, AVC, esclerose múltipla, Parkinson, neuropatia diabética, ELA, enxaqueca, meningite/encefalite e a trilha de CJD. Cada item tem área, resumo, ficha e aviso de que as categorias são didáticas.
+
+
+## Arquitetura NeuroAtlas
+A marca principal passou a ser NeuroAtlas. A rota `/` permanece focada em CJD e doenças priônicas, com ferramentas de comparação, pesquisa e estudo. A rota `/atlas` concentra a extensão ampla e detalhada do sistema nervoso, com catálogo independente, mapa por sistemas, filtros, fichas e método de estudo.

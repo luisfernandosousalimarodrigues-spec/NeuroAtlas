@@ -17,6 +17,7 @@ const mime = {
 
 function safePath(urlPath) {
   const decoded = decodeURIComponent(urlPath.split('?')[0]);
+  if (decoded === '/atlas') return path.join(root, 'atlas.html');
   const normalized = path.normalize(decoded).replace(/^([.][.][\\/])+/, '');
   return path.join(root, normalized === '/' ? 'index.html' : normalized);
 }
@@ -47,5 +48,5 @@ const server = http.createServer((req, res) => {
 });
 
 server.listen(port, '0.0.0.0', () => {
-  console.log(`PrionLab disponível em http://0.0.0.0:${port}`);
+  console.log(`NeuroAtlas disponível em http://0.0.0.0:${port}`);
 });
