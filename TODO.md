@@ -29,3 +29,8 @@
 - [x] O Atlas cobre cérebro, crises epilépticas, sistema imune/desmielinização, nervos periféricos, circulação, movimento, neuroinfecção e neurônio motor.
 - [x] O Atlas tem busca, filtros por área e fichas educativas com escopo e limites clínicos.
 - [x] O conteúdo aponta para o catálogo de doenças do NINDS e para panorama da OMS.
+
+
+## Neuroinfecção adicional
+- [x] O Atlas inclui raiva como neuroinfecção viral, com transmissão, prevenção pós-exposição e alerta de urgência.
+- [x] A ficha de raiva aponta para o CDC e evita aconselhamento individual sobre risco ou vacinação.
