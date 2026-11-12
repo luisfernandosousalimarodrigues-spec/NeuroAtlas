@@ -45,3 +45,7 @@ O site agora possui um Atlas do sistema nervoso separado do explorador de doenç
 
 ## Arquitetura NeuroAtlas
 A marca principal passou a ser NeuroAtlas. A rota `/` permanece focada em CJD e doenças priônicas, com ferramentas de comparação, pesquisa e estudo. A rota `/atlas` concentra a extensão ampla e detalhada do sistema nervoso, com catálogo independente, mapa por sistemas, filtros, fichas e método de estudo.
+
+
+## Escopo neurológico equilibrado
+A home do NeuroAtlas agora apresenta cérebro, nervos, movimento, crises, neuroinfecções e urgências em igualdade. CJD e doenças priônicas permanecem como uma trilha especializada entre outras. O catálogo do Atlas ganhou tétano, com conteúdo sobre toxina, espasmos, feridas e prevenção por vacinação, apoiado por referência do CDC.

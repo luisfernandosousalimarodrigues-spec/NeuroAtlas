@@ -41,3 +41,10 @@
 - [x] A home principal permanece focada em CJD e doenças priônicas.
 - [x] O Atlas neurológico foi movido para `/atlas` e abre uma experiência grande e detalhada ao clique.
 - [x] O manifesto de rotas declara `/` e `/atlas`, e o servidor entrega as duas páginas.
+
+
+## Portal neurológico equilibrado
+- [x] A home apresenta doenças neurológicas como escopo principal, sem comunicar CJD como foco exclusivo.
+- [x] A trilha priônica foi reclassificada como uma entre várias trilhas clínicas.
+- [x] O catálogo inclui raiva, tétano, Parkinson, epilepsia, AVC, esclerose múltipla, neuropatias, ELA, enxaqueca e meningite/encefalite.
+- [x] Tétano foi incluído com ficha educativa, prevenção por vacinação e referência oficial do CDC.
